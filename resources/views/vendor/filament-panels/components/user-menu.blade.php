@@ -17,6 +17,7 @@
 <x-filament::dropdown
     placement="bottom-end"
     teleport
+
     :attributes="
         \Filament\Support\prepare_inherited_attributes($attributes)
             ->class(['fi-user-menu'])

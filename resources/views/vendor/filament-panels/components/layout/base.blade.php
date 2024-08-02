@@ -99,6 +99,7 @@
                 }
             </script>
         @endif
+        @vite('resources/css/app.css')
 
         {{ \Filament\Support\Facades\FilamentView::renderHook('panels::head.end') }}
     </head>

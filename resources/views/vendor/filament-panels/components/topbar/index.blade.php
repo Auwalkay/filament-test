@@ -133,8 +133,18 @@
                 @if (filament()->hasDatabaseNotifications())
                     @livewire(Filament\Livewire\DatabaseNotifications::class, ['lazy' => true])
                 @endif
+                    <x-filament::icon icon="heroicon-o-bell" class="h-8 bg-green-100 p-1 w-8 rounded-xl"></x-filament::icon>
+                <div class="flex items-center">
 
-                <x-filament-panels::user-menu />
+
+                    <div class="border-green-200 bg-green-100 px-2 flex items-center rounded-xl border">
+                        <x-filament-panels::user-menu />
+                        <span class="p-2">Hi, {{Auth::user()->name}}</span>
+
+                    </div>
+
+                </div>
+
             @endif
         </div>
 

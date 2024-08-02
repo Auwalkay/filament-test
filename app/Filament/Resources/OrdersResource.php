@@ -33,7 +33,10 @@ class OrdersResource extends Resource
 
     public static function table(Table $table): Table
     {
+
         return $table
+            ->view('filament.orders.tables.custom-table')
+
             ->columns([
                 Tables\Columns\TextColumn::make('user.name')
                 ->label('User ID/Name')
@@ -86,6 +89,8 @@ class OrdersResource extends Resource
         ];
     }
 
+
+
     public static function getPages(): array
     {
         return [
@@ -94,4 +99,6 @@ class OrdersResource extends Resource
             'edit' => Pages\EditOrders::route('/{record}/edit'),
         ];
     }
+
+
 }

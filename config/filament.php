@@ -68,6 +68,7 @@ return [
     | Livewire's standard 200ms delay.
     |
     */
+    'dark_mode' => false,
 
     'livewire_loading_delay' => 'default',
 

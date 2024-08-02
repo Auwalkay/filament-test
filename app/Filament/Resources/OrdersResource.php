@@ -34,9 +34,9 @@ class OrdersResource extends Resource
     public static function table(Table $table): Table
     {
 
+        $records = Order::all();
         return $table
             ->view('filament.orders.tables.custom-table')
-
             ->columns([
                 Tables\Columns\TextColumn::make('user.name')
                 ->label('User ID/Name')

@@ -81,7 +81,7 @@
                 :sidebar-collapsible="$sidebarCollapsible"
                 :url="$item->getUrl()"
             >
-                {{ $item->getLabel() }}
+{{--                {{ $item->getLabel() }}--}}
             </x-filament-panels::sidebar.item>
         @endforeach
     </ul>

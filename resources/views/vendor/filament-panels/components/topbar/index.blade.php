@@ -13,6 +13,7 @@
     <nav
         class="flex h-16 items-center gap-x-4 bg-white px-4 shadow-sm ring-1 ring-gray-950/5 md:px-6 lg:px-8 dark:bg-gray-900 dark:ring-white/10"
     >
+        <span class="font-bold">Dashboard</span>
         {{ \Filament\Support\Facades\FilamentView::renderHook('panels::topbar.start') }}
 
         @if (filament()->hasNavigation())
@@ -139,7 +140,7 @@
 
                     <div class="border-green-200 bg-green-100 px-2 flex items-center rounded-xl border">
                         <x-filament-panels::user-menu />
-                        <span class="p-2">Hi, {{Auth::user()->name}}</span>
+                        <span class="p-2">Hi, {{ucwords(Auth::user()->name)}}</span>
 
                     </div>
 

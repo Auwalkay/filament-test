@@ -1,5 +1,5 @@
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <div class="pb-4 bg-white p-2">
+<div>
+    <div class="pb-4 p-2">
         <label for="table-search" class="sr-only">Search</label>
         <div class="relative flex items-center mt-1">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -14,9 +14,9 @@
                 </svg>
                 Filter
             </div>
-            <div class="ml-auto flex items-center gap-2">
+            <div class="ml-auto flex items-center bg-white gap-2">
 
-                <div class="text-green-600 border-2 border-green-600 py-3 font-bold px-3 flex items-center rounded">
+                <div class="text-green-600  border-2 border-green-600 py-3 font-bold px-3 flex items-center rounded">
                     <x-filament::icon icon="heroicon-o-bars-arrow-down" class="w-4 h-4 mx-3 border-2 rounded border-green-600">
 
                     </x-filament::icon>
@@ -25,23 +25,25 @@
             </div>
         </div>
     </div>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
 
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-        <tr>
-            <th></th>
-            <th scope="col" class="px-2 py-2">User ID/Name</th>
-            <th scope="col" class="px-2 py-2">Balance</th>
-            <th scope="col" class="px-6 py-3">Phone</th>
-            <th scope="col" class="px-6 py-3">Country</th>
-            <th scope="col" class="px-6 py-3">Postcode</th>
-            <th scope="col" class="px-6 py-3">State</th>
-            <th scope="col" class="px-6 py-3">Date</th>
-            <th scope="col" class="px-6 py-3">Actions</th>
-        </tr>
-        </thead>
-        <tbody>
 
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th></th>
+                <th scope="col" class="px-2 py-2">User ID/Name</th>
+                <th scope="col" class="px-2 py-2">Balance</th>
+                <th scope="col" class="px-6 py-3">Phone</th>
+                <th scope="col" class="px-6 py-3">Country</th>
+                <th scope="col" class="px-6 py-3">Postcode</th>
+                <th scope="col" class="px-6 py-3">State</th>
+                <th scope="col" class="px-6 py-3">Date</th>
+                <th scope="col" class="px-6 py-3">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{--        @foreach ($records as $record)--}}
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td class="w-4 p-4">
                     <div class="flex items-center">
@@ -69,6 +71,10 @@
                 </td>
             </tr>
 
-        </tbody>
-    </table>
+            {{--        @endforeach--}}
+
+            </tbody>
+        </table>
+    </div>
 </div>
+

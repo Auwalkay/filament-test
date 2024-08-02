@@ -1,6 +1,6 @@
 <x-filament::widget>
 
-    <div class="fi-wi-stats-overview-stats-ctn grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+    <div class="fi-wi-stats-overview-stats-ctn grid gap-6 md:grid-cols-2 xl:grid-cols-4 font-sans">
         @foreach($data as $d)
             <div class="grid text-gray-400 gap-y-2 border bg-white p-3 border-gray-200 rounded">
                 <div class="flex items-center gap-x-2">
@@ -23,7 +23,7 @@
 
 
                 <div class="flex items-center gap-x-1 text-xs">
-                    <div class="text-green-900 bg-green-200 bg-opacity-3 flex items-center rounded  px-2 text-white-100">
+                    <div class="text-green-950 font-bold bg-green-200 bg-opacity-3 flex items-center rounded  px-2 text-white-100">
                         <svg class="fi-wi-stats-overview-stat-description-icon h-3 w-3 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                              stroke="currentColor" aria-hidden="true" data-slot="icon">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path>

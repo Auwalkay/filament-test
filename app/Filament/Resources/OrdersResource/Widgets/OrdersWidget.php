@@ -12,9 +12,9 @@ class OrdersWidget extends BaseWidget
     public $data = [
         "Revenue" => [
             'label' => 'Revenue',
-            'value' => "2,9090AB",
+            'value' => "2,909OAB",
             'icon' => 'heroicon-o-map',
-            'backgroundColor' => 'bg-red-500',
+            'backgroundColor' => 'bg-purple-500',
         ],
         "Total orders" => [
             'label' => 'Total Orders',

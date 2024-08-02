@@ -52,7 +52,7 @@
                     </div>
                 </td>
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">#38944</th>
-                <td class="px-6 py-4">100.09</td>
+                <td class="px-6 py-4">100.09 OAB</td>
                 <td class="px-6 py-4">+234090445</td>
                 <td class="px-6 py-4">Nigeria</td>
                 <td class="px-6 py-4">12345678</td>
@@ -75,6 +75,23 @@
 
             </tbody>
         </table>
+
+        <div class="flex justify-between items-center mt-3">
+            <div class="items-end">
+                <button class="bg-gray-500 border border-gray-500 m-5 text-white p-2 rounded">Previous</button>
+            </div>
+            <div>
+                <div class="border p-2 bg-white rounded">
+                    <span class=" border-r-gray-700 p-2">Page</span>
+                    <span class="border-r-gray-700 p-2">10</span>
+                </div>
+            </div>
+            <div class="items-start">
+                <button class="bg-gray-500 border border-gray-500 m-5 text-white p-2 rounded">Next</button>
+
+            </div>
+
+        </div>
     </div>
 </div>
 
